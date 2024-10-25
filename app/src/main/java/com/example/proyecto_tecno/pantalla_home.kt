@@ -21,8 +21,8 @@ class pantalla_home : AppCompatActivity() {
         binding = ActivityPantallaHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
         window.statusBarColor = ContextCompat.getColor(this, android.R.color.black)
-        initRecyclerView()
-        setupSearch()
+        //initRecyclerView()
+        //setupSearch()
         replaceFragment(Home())
        binding.bottomNavigation.setOnItemSelectedListener {
            when(it.itemId){
@@ -42,7 +42,7 @@ class pantalla_home : AppCompatActivity() {
 
 
 
-        adapter.onItemClick = {
+       /* adapter.onItemClick = {
             val intent = Intent(this, DetailedActivity::class.java)
             intent.putExtra("evento", it)
             startActivity(intent)
@@ -68,8 +68,7 @@ class pantalla_home : AppCompatActivity() {
             }
             adapter.updateEventos(eventosFiltered)
         }
-    }
-
+*/ }
     override fun onBackPressed() {
 
     }
@@ -81,3 +80,4 @@ class pantalla_home : AppCompatActivity() {
         fragmentTransaction.commit()
     }
 }
+

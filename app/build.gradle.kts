@@ -55,6 +55,7 @@ dependencies {
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
+    implementation(libs.androidx.recyclerview)
     // Agregar dependencias de RecyclerView
     //implementation(libs.androidx.recyclerview)
     //implementation(libs.androidx.recyclerview.selection)

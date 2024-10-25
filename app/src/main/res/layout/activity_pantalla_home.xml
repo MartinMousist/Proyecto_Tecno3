@@ -20,13 +20,27 @@
         android:textColorHint="#B0BEC5"
         tools:ignore="MissingConstraints" />
 
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00FFFFFF"
+        android:visibility="visible"
+        tools:layout_editor_absoluteY="651dp"
+        tools:visibility="visible">
+
+    </FrameLayout>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerEventos"
         android:layout_width="418dp"
         android:layout_height="630dp"
         android:clipToPadding="false"
         android:paddingBottom="16dp"
-        android:scrollbars="vertical" />
+        android:scrollbars="vertical"
+        tools:ignore="MissingConstraints" >
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 
 
@@ -44,12 +58,4 @@
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-    <FrameLayout
-        android:id="@+id/frame_layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
-
-    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
